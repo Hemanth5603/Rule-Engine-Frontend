@@ -4,6 +4,7 @@ import RuleCombiner from './components/RuleCombiner';
 import RuleDashboard from './components/RuleDashboard';
 import RuleEvaluator from './components/RuleEvaluator';
 import styles from '@/app/page.module.css'
+import { toast, ToastContainer } from 'react-toastify';
 
 import { useState } from 'react';
 
@@ -23,15 +24,29 @@ export default function Home() {
     })
       .then((res) => {
         console.log("Status Code:", res.status); // Log the status code
-        if (!res.ok) {
+  
+        // Handle different status codes for success or partial success
+        if (res.status === 200) {
+          
+          alert("Rule Created Successful, Please Refresh the page")
+        } else if (res.status === 202) {
+          
+          alert("Rule Created Successfully");
+        } else if (res.ok) {
+          toast.success(`Request succeeded with status: ${res.status}`); // Generic success message for other 2xx statuses
+        } else {
           throw new Error(`HTTP error! Status: ${res.status}`);
         }
         return res.json();
       })
-      .then((newRule) => setRules([...rules, newRule]))
-      .catch((err) => console.error('Error creating rule:', err));
+      .then((newRule) => {
+        setRules([...rules, newRule]); // Update the rules state
+      })
+      .catch((err) => {
+        console.error('Error creating rule:', err);
+        toast.error('Failed to create rule.'); // Toast error message for failure
+      });
   };
-  
   
   
 
@@ -79,6 +94,7 @@ export default function Home() {
 
   return (
     <div className={styles.gridcontainer}>
+      
       <div className={styles.griditem}>
         <h2>Rule Creation</h2>
         <br/>

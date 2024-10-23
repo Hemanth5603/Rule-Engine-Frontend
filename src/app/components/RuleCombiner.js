@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { toast } from 'react-toastify';
 export default function RuleCombiner({ onCombine }) {
   const [firstRuleId, setFirstRuleId] = useState('');
   const [secondRuleId, setSecondRuleId] = useState('');
@@ -21,22 +21,32 @@ export default function RuleCombiner({ onCombine }) {
         operator: logicalOperator, // Send the logical operator (AND/OR)
       }),
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === 200) {  // Check if status is 200
+          return res.json();
+        } else {
+          throw new Error('Failed to combine rules.');
+        }
+      })
       .then((data) => {
         if (data.status === "true") {
           console.log('Combined Rule ID:', data.id);
-          alert(`Combined Rule successfully created with ID: ${data.id}`);
+          alert("Rule Combined successfully, Please Refresh")
           onCombine(data.id); // Use the ID of the combined rule
         } else {
-          alert('Failed to combine rules.');
+          toast.error('Failed to combine rules.'); // Toast error message
         }
       })
-      .catch((err) => console.error('Error combining rules:', err));
+      .catch((err) => {
+        console.error('Error combining rules:', err);
+        alert("error combining rules")
+      });
 
-    // Clear input fields after combination
-    
+    // Clear input fields after combination (optional)
+    setFirstRuleId('');
+    setSecondRuleId('');
+    setLogicalOperator('');
   };
-
   return (
     <div>
       <div>
