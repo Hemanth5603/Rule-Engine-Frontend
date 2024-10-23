@@ -4,6 +4,8 @@ This is the frontend application for the Rule Engine system, built using Next.js
 
 <h5>Live Link</h5> https://rule-engine-frontend-rust.vercel.app/
 
+<h5>Backend Golang server codebase link</h5> https://github.com/Hemanth5603/Rule-Engine-Backend
+
 <h3>Here is the Glimpse of the application</h3>
 <br/>
 
