@@ -26,7 +26,7 @@ This is the frontend application for the Rule Engine system, built using Next.js
 <br>
 <h3>Features</h3>
  - Rule Creation: Allows users to define new rules with various attributes. <br> <br>
- - Rule Management: Users can view and delete existing rules. <br><br>
+ - Rule Management: Users can view the existing rules. <br><br>
  - Rule Evaluation: Users can input attributes (like age, department, salary, experience) and evaluate rules against those attributes using the backend API.<br><br>
  - Responsive Design: The UI is responsive and works well on both desktop and mobile device. <br>
 
