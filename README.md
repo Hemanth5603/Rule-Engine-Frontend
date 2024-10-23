@@ -4,6 +4,24 @@ This is the frontend application for the Rule Engine system, built using Next.js
 
 <h5>Live Link</h5> https://rule-engine-frontend-rust.vercel.app/
 
+<h5>Backend Golang server codebase link</h5> https://github.com/Hemanth5603/Rule-Engine-Backend
+
+<h3>Here is the Glimpse of the application</h3>
+<br/>
+
+<img src="https://github.com/user-attachments/assets/396385e7-6d41-4d8d-82e9-4eb8cc8dfb43" alt="Screenshot of the App" style="width:80%;">
+
+<h3>System Architecture</h3>
+<br/>
+<img src="https://github.com/user-attachments/assets/bd888e4b-4b66-44db-ab48-7e978ac44b4c" alt="Screenshot of the App" style="width:80%;">
+
+
+<h3>Here is how the AST nodes are stored in the database individually with relationships</h3>
+<br/>
+
+<img src="https://github.com/user-attachments/assets/d7665a38-f5aa-4667-aa22-35063062ee89" alt="Screenshot of the App" style="width: 80%;">
+
+
 
 <br>
 <h3>Features</h3>
@@ -51,11 +69,6 @@ npm run dev
 <br> <br>
  - RuleDashboard: Displays the list of rules, and allows users to delete rules.<br><br>
  - RuleCombiner: Allows users to combine multiple rules using logical operators (AND/OR).<br><br>
-
-<h3>Here is the Glimpse of the application</h3>
-<br/>
-
-![Screenshot 2024-10-23 162742](https://github.com/user-attachments/assets/396385e7-6d41-4d8d-82e9-4eb8cc8dfb43)
 
 
 
