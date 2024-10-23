@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+
 export default function RuleCombiner({ onCombine }) {
   const [firstRuleId, setFirstRuleId] = useState('');
   const [secondRuleId, setSecondRuleId] = useState('');
