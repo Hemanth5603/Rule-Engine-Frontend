@@ -1,6 +1,11 @@
 <h2>Rule Engine Frontend</h2>
 This is the frontend application for the Rule Engine system, built using Next.js. It allows users to create, manage, and evaluate rules dynamically. The application integrates with a backend API for rule evaluation and visualization.
 <br>
+
+<h5>Live Link</h5> https://rule-engine-frontend-rust.vercel.app/
+
+
+<br>
 <h3>Features</h3>
  - Rule Creation: Allows users to define new rules with various attributes. <br> <br>
  - Rule Management: Users can view and delete existing rules. <br><br>
@@ -41,11 +46,11 @@ npm run dev
 ```
 
 <h3>Key Components</h3> <be>
- - RuleCreator: A form where users can create a rule by giving necessary attributes in the input.
+ - RuleCreator: A form where users can create a rule by giving necessary attributes in the input. <br><br>
  - RuleEvaluator: A form where users input attributes which are age, salary, department, experience to evaluate rules. 
 <br> <br>
  - RuleDashboard: Displays the list of rules, and allows users to delete rules.<br><br>
- - RuleCombiner: Allows users to combine multiple rules using logical operators (AND/OR).<br><be>
+ - RuleCombiner: Allows users to combine multiple rules using logical operators (AND/OR).<br><br>
 
 <h3>Here is the Glimpse of the application</h3>
 <br/>
