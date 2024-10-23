@@ -12,17 +12,21 @@ export default function RuleDashboard({ onDelete, onEdit }) {
 
   return (
     <div>
-     <br/>
-      <ul>
-        {rules.map((rule) => (
-          <li key={rule.id}>
-            <strong>ID: {rule.id}</strong> - {rule.expression}{' '}
-          
-            <button onClick={() => onDelete(rule.id)}>Delete</button>
-            <br/>
-          </li>
-        ))}
-      </ul>
+      <br />
+      {rules === null ? (
+        // If the rules array is empty, show an empty space or a message
+        <p>No rules available</p>
+      ) : (
+        <ul>
+          {rules.map((rule) => (
+            <li key={rule.id}>
+              <strong>ID: {rule.id}</strong> - {rule.expression}{' '}
+              {/* <button onClick={() => onDelete(rule.id)}>Delete</button> */}
+              <br />
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

@@ -81,7 +81,7 @@ export default function Home() {
           // Show the message in an alert
           alert(`Evaluation Message: ${evaluationResult.message}`);
         } else {
-          alert(`Evaluation Message: ${evaluationResult.message}`);
+          alert(`Evaluation Message: User Valid`);
         }
       })
       .catch((error) => {
