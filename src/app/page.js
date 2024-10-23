@@ -81,6 +81,7 @@ export default function Home() {
     <div className={styles.gridcontainer}>
       <div className={styles.griditem}>
         <h2>Rule Creation</h2>
+        <br/>
         <RuleForm onSubmit={handleCreateRule} />
       </div>
       <div className={styles.griditem}>
@@ -89,10 +90,12 @@ export default function Home() {
       </div>
       <div className={styles.griditem}>
         <h2>Combine Rules</h2>
+        <br/>
         <RuleCombiner rules={rules} onCombine={handleCombineRules} />
       </div>
       <div className={styles.griditem}>
         <h2>Evaluate Rule</h2>
+        <br/> 
         <RuleEvaluator onEvaluate={handleEvaluateRule} />
       </div>
     </div>

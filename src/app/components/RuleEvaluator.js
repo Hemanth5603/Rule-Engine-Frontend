@@ -31,7 +31,7 @@ export default function RuleEvaluator({ onEvaluate }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Rule Evaluation</h2>
+      
       <div>
         <label>Age: </label>
         <input
@@ -42,6 +42,7 @@ export default function RuleEvaluator({ onEvaluate }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>Department: </label>
         <input
@@ -52,6 +53,7 @@ export default function RuleEvaluator({ onEvaluate }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>Salary: </label>
         <input
@@ -62,6 +64,7 @@ export default function RuleEvaluator({ onEvaluate }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>Experience: </label>
         <input
@@ -72,6 +75,7 @@ export default function RuleEvaluator({ onEvaluate }) {
           required
         />
       </div>
+      <br/>
       <button type="submit">Evaluate</button>
     </form>
   );

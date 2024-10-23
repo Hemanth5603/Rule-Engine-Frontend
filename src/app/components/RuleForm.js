@@ -32,6 +32,7 @@ export default function RuleForm({ onSubmit }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>Operator: </label>
         <select value={operator} onChange={(e) => setOperator(e.target.value)} required>
@@ -41,6 +42,7 @@ export default function RuleForm({ onSubmit }) {
           <option value="=">Equal to</option>
         </select>
       </div>
+      <br/>
       <div>
         <label>Value: </label>
         <input
@@ -50,6 +52,7 @@ export default function RuleForm({ onSubmit }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>Logical Operator (AND/OR): </label>
         <select
@@ -63,6 +66,7 @@ export default function RuleForm({ onSubmit }) {
         </select>
         
       </div>
+      <br/>
       <div>
         <label>NextAttribute: </label>
         <input
@@ -72,6 +76,7 @@ export default function RuleForm({ onSubmit }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>NextOperator: </label>
         <select value={nextOperator} onChange={(e) => setNextOperator(e.target.value)} required>
@@ -81,6 +86,8 @@ export default function RuleForm({ onSubmit }) {
           <option value="=">Equal to</option>
         </select>
       </div>
+
+      <br/>
       <div>
         <label>NextValue: </label>
         <input
@@ -90,6 +97,7 @@ export default function RuleForm({ onSubmit }) {
           required
         />
       </div>
+      <br/>
       <button type="submit">Create Rule</button>
     </form>
   );

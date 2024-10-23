@@ -12,13 +12,14 @@ export default function RuleDashboard({ onDelete, onEdit }) {
 
   return (
     <div>
-      <h2>Rule Management</h2>
+     <br/>
       <ul>
         {rules.map((rule) => (
           <li key={rule.id}>
             <strong>ID: {rule.id}</strong> - {rule.expression}{' '}
-            <button onClick={() => onEdit(rule)}>Edit</button>
+          
             <button onClick={() => onDelete(rule.id)}>Delete</button>
+            <br/>
           </li>
         ))}
       </ul>

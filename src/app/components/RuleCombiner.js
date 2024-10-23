@@ -39,7 +39,6 @@ export default function RuleCombiner({ onCombine }) {
 
   return (
     <div>
-      <h2>Combine Rules</h2>
       <div>
         <label>First Rule ID: </label>
         <input
@@ -49,6 +48,7 @@ export default function RuleCombiner({ onCombine }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>Second Rule ID: </label>
         <input
@@ -58,6 +58,7 @@ export default function RuleCombiner({ onCombine }) {
           required
         />
       </div>
+      <br/>
       <div>
         <label>Logical Operator: </label>
         <select
@@ -70,6 +71,7 @@ export default function RuleCombiner({ onCombine }) {
           <option value="OR">OR</option>
         </select>
       </div>
+      <br/>
       <button onClick={handleCombine}>Combine Selected Rules</button>
     </div>
   );
