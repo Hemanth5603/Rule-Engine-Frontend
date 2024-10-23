@@ -49,7 +49,8 @@ npm run dev
 
 <h3>Here is the Glimpse of the application</h3>
 <br/>
-![Screenshot 2024-10-23 162742](https://github.com/user-attachments/assets/4920e207-aa5c-4d47-b642-f4c5e9eadeea)
+
+![Screenshot 2024-10-23 162742](https://github.com/user-attachments/assets/396385e7-6d41-4d8d-82e9-4eb8cc8dfb43)
 
 
 
